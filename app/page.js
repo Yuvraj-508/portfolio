@@ -4,7 +4,7 @@ import Service from "./Component/Service";
 
 import WhyMeSection from "./Component/Whyme";
 import Work from "./Component/Work";
-import Testimonial from "./Component/testimonial";
+import Testimonial from "./Component/Testimonial";
 import Contact from "./Component/Contact";
 import Faq from "./Component/Faq";
 import Fotter from "./Component/Fotter";

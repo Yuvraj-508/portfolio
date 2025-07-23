@@ -11,7 +11,7 @@ import Fotter from "./Component/Fotter";
 
 export default function Home() {
   return (
-       <div className="w-full lg:px-[6%] px-[4%]  h-full bg-[#07090E] text-white">
+       <div className="w-full overflow-hidden lg:px-[6%] px-[4%]  h-full bg-[#07090E] text-white">
       
         <Hero/>
         <Service/>

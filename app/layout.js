@@ -1,12 +1,22 @@
+import Fotter from "./Component/Fotter";
+import Navbar from "./Component/Navbar";
 import "./globals.css";
+import { Inter ,Outfit} from 'next/font/google'
 
-
+const inter = Outfit({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body  >
+       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/logo2.png" type="image/x-icon" />
+        <title>Yuvraj </title>
+      </head>
+       <body className={inter.className}>
+        <Navbar/>
         {children}
+       
       </body>
     </html>
   );

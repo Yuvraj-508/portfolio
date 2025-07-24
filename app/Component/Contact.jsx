@@ -3,11 +3,11 @@ import React from 'react'
 function Contact() {
   return (
     <section className=" text-white mt-35 ">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-15 items-start">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-15 md:items-start text-center md:text-start items-center">
         
         {/* Left Content */}
         <div>
-        <h1 className="px-4 py-2 rounded-xl border  border-white/20 bg-white/10 backdrop-blur-sm text-[#726cdbda] text-[14px] font-medium shadow-sm mb-8 w-fit">Contact Me</h1>
+        <h1 className="px-4 py-2 rounded-xl border  border-white/20 bg-white/10 backdrop-blur-sm text-[#726cdbda] text-[14px] font-medium shadow-sm mb-8 mx-auto md:mx-0 w-fit">Contact Me</h1>
           <h1 className="text-3xl md:text-[46px]   mb-6">
          
            Let's Transform your <br />business
@@ -19,7 +19,7 @@ function Contact() {
             Contact me now, let's kick-start!
           </p>
           <p className="text-[#c5c5c5c0] mb-4">Also you can find me here:</p>
-          <div className="flex space-x-4">
+          <div className="flex justify-center md:justify-start space-x-4">
             <a href="#" className="bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition">
               <i className="fab fa-twitter"></i>
             </a>

@@ -38,7 +38,7 @@ function Navbar() {
 </button>
 
        {/* // moblie  */}
-      <div className={`  backdrop-blur-md bg-black fixed h-fit py-6 px-6 sm:translate-y-15 translate-y-13 inset-2 rounded-xl transition  duration-50 ease-in-out ${toggle?"":"hidden"} `}>
+      <div className={`  backdrop-blur-md bg-black border border-white/10 fixed h-fit py-6 px-6 translate-y-15  inset-1 rounded-xl transition  duration-50 ease-in-out ${toggle?"":"hidden"} `}>
           <div className="flex flex-col  gap-6">
          <ScrollLink to="hero" smooth={true} offset={-200} duration={500} className='cursor-pointer' onClick={()=>setToggle(prev=>!prev)} >Home</ScrollLink>
           <ScrollLink to="about" smooth={true} offset={-100} duration={500} className=' cursor-pointer 'onClick={()=>setToggle(prev=>!prev)} >Work</ScrollLink>

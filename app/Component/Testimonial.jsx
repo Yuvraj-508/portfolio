@@ -42,7 +42,7 @@ const Testimonial = () => {
   return (
   <div className="mt-40 w-full flex flex-col justify-center items-center text-white ">
         <h1 className="px-4 py-2 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm text-[#726cdbda] text-[14px] font-medium shadow-sm mb-4 w-fit">Testimonails</h1>
-        <p className="text-4xl font-normal mt-5">What My Clients Say About Me</p>
+        <p className="md:text-4xl text-3xl font-normal text-center md:text-start mt-5">What My Clients Say About Me</p>
   <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto mt-20">
     {testimonials.map((item, index) => (
       <div

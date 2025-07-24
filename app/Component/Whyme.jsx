@@ -73,7 +73,7 @@ export default function WhyMeSection() {
   return (
     <section className=" mt-40 text-white">
       
-      <div className="max-w-full card flex flex-col lg:flex-row items-center justify-between gap-12 border border-white/10 backdrop-blur-md rounded-3xl py-20 px-10 shadow-lg"
+      <div className="max-w-full hidden card md:flex flex-col lg:flex-row items-center justify-between gap-12 border border-white/10 backdrop-blur-md rounded-3xl py-20 px-10  shadow-lg"
         ref={el => cardRefs.current[0] = el}
          >
         {/* Auto-Scrolling Features */}
@@ -116,6 +116,53 @@ export default function WhyMeSection() {
           </button>
         </div>
       </div>
+
+      {/* small screen  */}
+       <div className="max-w-full md:hidden card flex flex-col lg:flex-row items-center  gap-10 border border-white/10 backdrop-blur-md rounded-3xl py-20 sm:px-10 px-6 shadow-lg"
+        ref={el => cardRefs.current[0] = el}
+         >
+         {/* Right Content */}
+        <div className="text-center">
+        <h1 className="px-4 py-2 rounded-xl  border border-white/20 bg-white/10 backdrop-blur-sm text-[#726cdbda] text-[14px] font-medium shadow-sm mb-4 mx-auto w-fit">Why Choose me?</h1>
+          <h2 className="sm:text-4xl text-3xl font-bold leading-tight mb-4">
+            Your Go-To Freelancer for Web Solutions
+          </h2>
+          <p className="text-[#cdcdcdd8] mb-6">
+            I bring passion, precision, and personal attention to every line of code. Let’s build something that works beautifully—and delivers results.
+          </p>
+          <button className="bg-[#5D57D0] hover:bg-[#4c48b4] py-3 px-6 rounded-lg text-white transition">
+            Let’s Work Together
+          </button>
+        </div>
+     
+
+       <div
+  className=" overflow-hidden h-125"
+  onMouseEnter={() => setIsHovered(true)}
+  onMouseLeave={() => setIsHovered(false)}
+>
+  <div
+    className="transition-transform duration-700 ease-in-out"
+    // style={{ transform: `translateY(-${currentIndex * 10}rem)` }}
+  >
+    {features.map((feature, idx) => (
+      <div key={idx} className="flex flex-col items-start gap-5">
+        <div className="text-2xl text-[#5D57D0] mb-2 border-white/30 border rounded-full py-3 px-4">
+          {feature.icon}
+        </div>
+        <h3 className="text-xl font-semibold text-[#ffffffe1]">
+          {feature.title}
+        </h3>
+        <p className="text-sm text-[#9e9e9e]">{feature.detail}</p>
+        <div className="bg-white/10 h-[1px] w-full mt-4 mb-6" />
+      </div>
+    ))}
+  </div>
+</div>
+
+ </div>
+       
+        
     </section>
   );
 }

@@ -32,21 +32,21 @@ const content = [{
 ]
 function Service() {
   return (
-    <div className="w-full mt-40 ">
-        <div className="w-full flex items-center gap-5">
-        <div className="left max-w-[50%] flex flex-col gap-5 ">
+
+        <div className="w-full mt-40 flex md:flex-row flex-col items-center gap-5">
+        <div className="left md:max-w-[50%] flex flex-col md:items-start items-center gap-5 ">
                             <h1 className="px-4 py-2 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm text-[#726cdbda] text-[16px] font-medium shadow-sm mb-4 w-fit">Services</h1>
 
-            <h1 className='text-[35px]  leading-12 font-[700]'>All Your Website Needs—Handled Personally, Built Professionally.</h1>
-            <p className='text-[16px] max-w-[65%]   text-[#C8C8C9]'>From design to launch—websites that look sharp, work fast, and convert better.</p>
+            <h1 className='sm:text-[35px] text-[24px]   text-center md:text-start leading-12 font-[700]'>All Your Website Needs—Handled Personally, Built Professionally.</h1>
+            <p className='text-[16px] sm:max-w-[65%] text-center sm:text-start   text-[#C8C8C9]'>From design to launch—websites that look sharp, work fast, and convert better.</p>
             <Link href="/" className='bg-[#5D57D0] text-white text-[16px] px-3.5 py-3  rounded-2xl w-fit '>Book Now</Link>
         </div>
-        <div className="right max-w-[50%] flex items-end justify-end mt-10">
-            <div className="grid grid-cols-2 gap-3  md:gap-8">
+        <div className="right md:max-w-[50%] flex items-end justify-end mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3  md:gap-8">
         {content.map((service, index) => (
   <div
     key={index}  // ✅ Always include a unique `key` when mapping in React
-    className="box md:min-w-[285px]  max-w-[150px] text-center px-4 py-4  bg-[#0F0F0F]  rounded-xl shadow-lg"
+    className="box md:min-w-[285px]  md:max-w-[150px] text-center px-4 py-4  bg-[#0F0F0F]  rounded-xl shadow-lg"
   >
     <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
   </div>
@@ -55,7 +55,7 @@ function Service() {
     </div>
         </div>
         </div>
-    </div>
+
   )
 }
 

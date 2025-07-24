@@ -4,7 +4,7 @@ import StarBackground from './StarBackground'
 
 function Hero() {
   return (
-    <div className='w-full h-screen flex flex-col justify-center items-center relative '>
+    <div className='w-full h-screen flex flex-col justify-center items-center relative -mt-10 md:mt-0'>
       {/* <StarBackground className="absolute"/> */}
         <h1 className="px-4 py-2 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm text-[#726cdbda] text-[14px] font-medium shadow-sm mb-4">Hey! My nam<span className="text-[#726cdb]">e is Yuvraj!</span></h1>
       <h1 className='lg:text-[60px] md:text-[52px] sm:text-[48px] text-[30px] text-center md:max-w-[75%] lg:leading-18 sm:leading-15 leading-10 font-[500]'>
@@ -16,8 +16,8 @@ function Hero() {
         <button className='bg-[#121621] text-[16px] px-4 py-3 rounded-xl border border-white/5'>See My Work</button>
       </div>
       <div className="tbox -mt-5">
-        <div className="light"></div>
-        <div className="tube"></div>
+        <div className="light md:w-[400px] sm:w-[300px]  w-[250px] h-[10px] "></div>
+        <div className="tube  md:w-[400px] sm:w-[300px]  w-[250px] h-[10px]"></div>
       </div>
     </div>
   )

@@ -25,7 +25,7 @@ function Work() {
   return (
    <div className="w-full flex flex-col items-center justify-center mt-40">
         <h1 className="px-4 py-2 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm text-[#726cdbda] text-[14px] font-medium shadow-sm mb-4 w-fit">How it works?</h1>
-    <p className='text-5xl tracking-wide font-normal mb-10'>
+    <p className='md:text-5xl text-3xl md:tracking-wide font-normal mb-10'>
    Process Is Everything
     </p>
     <div className="relative flex flex-wrap items-center justify-center gap-6 mt-10">

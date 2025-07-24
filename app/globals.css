@@ -18,8 +18,8 @@
 }
 
 .light,.tube{
-    height:10px;
-     width:400px;
+    /* height:10px;
+     width:400px; */
      position:relative;
      top:100px;
      margin:auto;

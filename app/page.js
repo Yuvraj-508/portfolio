@@ -8,12 +8,14 @@ import Testimonial from "./Component/Testimonial";
 import Contact from "./Component/Contact";
 import Faq from "./Component/Faq";
 import Fotter from "./Component/Fotter";
+import Projects from "./Component/Projects";
 
 export default function Home() {
   return (
        <div className="w-full overflow-hidden lg:px-[6%] px-[2%]  h-full bg-[#07090E] text-white">
       
         <Hero/>
+        <Projects/>
         <Service/>
        <WhyMeSection/>
           <Work/>

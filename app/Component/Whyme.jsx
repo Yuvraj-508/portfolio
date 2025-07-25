@@ -55,20 +55,21 @@ export default function WhyMeSection() {
 
   const cardRefs = useRef([]);
 
-  useEffect(() => {
-    const cards = cardRefs.current;
+useEffect(() => {
+  cardRefs.current.forEach((card) => {
+    if (!card) return;
 
-    cards.forEach(card => {
-      card.onmousemove = function (e) {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+    card.onmousemove = function (e) {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
 
-        card.style.setProperty('--x', `${x}px`);
-        card.style.setProperty('--y', `${y}px`);
-      };
-    });
-  }, []);
+      card.style.setProperty('--x', `${x}px`);
+      card.style.setProperty('--y', `${y}px`);
+    };
+  });
+}, []);
+
 
   return (
     <section className=" mt-40 text-white">
@@ -119,7 +120,7 @@ export default function WhyMeSection() {
 
       {/* small screen  */}
        <div className="max-w-full md:hidden card flex flex-col lg:flex-row items-center  gap-10 border border-white/10 backdrop-blur-md rounded-3xl py-20 sm:px-10 px-6 shadow-lg"
-        ref={el => cardRefs.current[0] = el}
+        ref={el => cardRefs.current[1] = el}
          >
          {/* Right Content */}
         <div className="text-center">
@@ -160,7 +161,7 @@ export default function WhyMeSection() {
   </div>
 </div>
 
- </div>
+  </div>
        
         
     </section>

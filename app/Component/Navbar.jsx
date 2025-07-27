@@ -13,20 +13,29 @@ function Navbar() {
    <img src="/logo2.png" alt="" className='md:w-10 w-8'/>
     </Link>
     <ul className='hidden md:flex '>
-      <li className='mx-5 text-sm inline-block'>
+      <li className='mx-5 text-sm inline-block cursor-pointer'>
         <ScrollLink to="hero" smooth={true} offset={0} duration={500}>Home</ScrollLink>
       </li>
-      <li className='mx-5 text-sm inline-block'>
-        <ScrollLink to="program" smooth={true} offset={-80} duration={500}>Work</ScrollLink>
+      <li className='mx-5 text-sm inline-block cursor-pointer'>
+        <ScrollLink to="project" smooth={true} offset={-80} duration={500}>Work</ScrollLink>
       </li>
-      <li className='mx-5 text-sm inline-block'>
-        <ScrollLink to="about" smooth={true} offset={-80} duration={500}>Services</ScrollLink>
+      <li className='mx-5 text-sm inline-block cursor-pointer'>
+        <ScrollLink to="Service" smooth={true} offset={-80} duration={500}>Services</ScrollLink>
       </li>
-      <li className='mx-5 text-sm inline-block'>
-        <ScrollLink to="testimonials" smooth={true} offset={-80} duration={500}>Testimonials</ScrollLink>
+      <li className='mx-5 text-sm inline-block cursor-pointer'>
+        <ScrollLink to="testimaniol" smooth={true} offset={-80} duration={500}>Testimonials</ScrollLink>
       </li>
     </ul>
-    <ScrollLink className='bg-[#5D57D0] hidden md:flex py-2 px-3 rounded-xl text-lg items-center gap-2' to="contact" smooth={true} offset={-80}>Contact Us <ArrowUpRight /></ScrollLink>
+    <ScrollLink
+        to="Contact"
+        className='bg-[#5D57D0] hidden md:flex py-2 px-3 rounded-xl text-white text-lg  items-center gap-2 cursor-pointer'
+        smooth={true}
+        offset={-80}
+        duration={500}
+      >
+        Contact Us <ArrowUpRight />
+      </ScrollLink>
+    {/* Mobile Menu Button */}
      <button onClick={() => setToggle(!toggle)} className="text-2xl cursor-pointer md:hidden transition duration-300 ease-in-out transform">
   <span className="transition-all duration-300 ease-in-out">
     {toggle ? (
@@ -41,9 +50,9 @@ function Navbar() {
       <div className={`  backdrop-blur-md bg-black border border-white/10 fixed h-fit py-6 px-6 translate-y-15  inset-1 rounded-xl transition  duration-50 ease-in-out ${toggle?"":"hidden"} `}>
           <div className="flex flex-col  gap-6">
          <ScrollLink to="hero" smooth={true} offset={-200} duration={500} className='cursor-pointer' onClick={()=>setToggle(prev=>!prev)} >Home</ScrollLink>
-          <ScrollLink to="about" smooth={true} offset={-100} duration={500} className=' cursor-pointer 'onClick={()=>setToggle(prev=>!prev)} >Work</ScrollLink>
-          <ScrollLink to="testmonail" smooth={true} offset={-20} duration={500} className=' cursor-pointer 'onClick={()=>setToggle(prev=>!prev)} >Service</ScrollLink>
-    <ScrollLink className='bg-[#5D57D0] contact flex justify-center py-2 px-2 rounded-xl text-[16px] items-center gap-2' to="contact" smooth={true} offset={-80}>Contact Us <ArrowUpRight /></ScrollLink>
+          <ScrollLink to="project" smooth={true} offset={-100} duration={500} className=' cursor-pointer 'onClick={()=>setToggle(prev=>!prev)} >Work</ScrollLink>
+          <ScrollLink to="Service" smooth={true} offset={-20} duration={500} className=' cursor-pointer 'onClick={()=>setToggle(prev=>!prev)} >Service</ScrollLink>
+    <ScrollLink to="Contact"  className='cursor-pointer bg-[#5D57D0] contact flex justify-center py-2 px-2 rounded-xl text-[16px] items-center gap-2'  smooth={true} offset={-80}>Contact Us <ArrowUpRight /></ScrollLink>
           </div>
          </div>
   </nav>

@@ -1,10 +1,11 @@
 "use client";
 import React from 'react';
+import { Link } from 'react-scroll';
 
 
 function Hero() {
   return (
-    <div className='w-full h-screen flex flex-col justify-center items-center relative px-4 py-20'>
+    <div className=' hero w-full h-screen flex flex-col justify-center items-center relative px-4 py-20'>
       {/* <StarBackground className="absolute" /> */}
       
       <h1 className="px-4 py-2 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm text-[#726cdbda] text-[14px] font-medium shadow-sm mb-4">
@@ -20,12 +21,12 @@ function Hero() {
       </p>
 
       <div className="flex items-center mt-6 gap-4">
-        <button className='bg-[#5D57D0] text-white text-[16px] px-4 py-3 rounded-xl'>
+        <Link to="Contact" smooth={true} offset={-80} duration={500} className='bg-[#5D57D0] cursor-pointer text-white text-[16px] px-4 py-3 rounded-xl'>
           Get in Touch
-        </button>
-        <button className='bg-[#121621] text-[16px] px-4 py-3 rounded-xl border border-white/5'>
+        </Link>
+        <Link to="project" smooth={true} offset={-80} duration={500} className='bg-[#121621] cursor-pointer text-[16px] px-4 py-3 rounded-xl border border-white/5'>
           See My Work
-        </button>
+        </Link>
       </div>
 
       {/* Light Bar */}

@@ -1,5 +1,6 @@
 'use client'
 import React, { useRef, useEffect,useState } from 'react';
+import { Link } from 'react-scroll';
 
 
 const features = [
@@ -112,9 +113,9 @@ useEffect(() => {
           <p className="text-[#cdcdcdd8] mb-6">
             I bring passion, precision, and personal attention to every line of code. Let’s build something that works beautifully—and delivers results.
           </p>
-          <button className="bg-[#5D57D0] hover:bg-[#4c48b4] py-3 px-6 rounded-lg text-white transition">
+          <Link to='Contact' smooth={true} offset={-80} duration={500}  className="cursor-pointer bg-[#5D57D0] hover:bg-[#4c48b4] py-3 px-6 rounded-lg text-white transition">
             Let’s Work Together
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
        <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="/logo2.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" className="w-5" />
         <title>Yuvraj </title>
       </head>
        <body className={inter.className}>

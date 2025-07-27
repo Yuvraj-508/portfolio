@@ -12,7 +12,7 @@ const projects = [
 ];
 function Projects() {
   return (
-    <div className="project mt-40 relative w-full overflow-hidden">
+    <div className="project mt-40 relative shadow-2xl w-full overflow-hidden">
            <motion.div
              className="flex gap-5 w-max"
              animate={{ x: ["0%", "-50%"] }}
@@ -30,7 +30,7 @@ function Projects() {
                  <img
                    src={project.img}
                    alt="Project"
-                   className=" object-center  w-[450px] h-[380px] rounded-t-2xl"
+                   className=" object-center w-[250px] h-[250px] md:w-[450px] md:h-[350px] rounded-t-2xl"
                  />
                </div>
              ))}

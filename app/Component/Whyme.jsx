@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 const features = [
   {
     icon: "🚀",
-    title: "Grow: Elevate Your Career",
+    title: "Scale Your Career",
     desc: "Climb higher with freelance guidance tailored to your goals.",
     detail: "Whether you're building your first project or scaling your brand, I provide the tools, tech, and strategy to help you succeed confidently.",
   },
@@ -139,7 +139,7 @@ useEffect(() => {
      
 
        <div
-  className=" overflow-hidden h-125"
+  className=" overflow-hidden "
   onMouseEnter={() => setIsHovered(true)}
   onMouseLeave={() => setIsHovered(false)}
 >

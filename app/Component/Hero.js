@@ -12,7 +12,7 @@ function Hero() {
         Hey! My nam<span className="text-[#726cdb]">e is Yuvraj!</span>
       </h1>
 
-      <h1 className='lg:text-[60px] md:text-[52px] sm:text-[48px] text-[30px] text-center md:max-w-[75%] lg:leading-[4.5rem] sm:leading-[4rem] leading-10 font-[500]'>
+      <h1 className='lg:text-[60px] md:text-[52px] sm:text-[48px] text-[28px] text-center md:max-w-[75%] lg:leading-[4.5rem] sm:leading-[4rem] leading-10 font-[500]'>
         I Build Smart Web<span className='text-[#C8C8C9]'>Pages that </span>Convert Scroll<span className='text-[#C8C8C9]'>s into Sales.</span>
       </h1>
 

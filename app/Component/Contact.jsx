@@ -10,7 +10,7 @@ function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "854a4f90-0e72-4b3e-b750-e6fa8e50551f");
+    formData.append("access_key", "dfbb029e-b2a5-42a0-b187-29860613359e");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -50,7 +50,7 @@ function Contact() {
              <Instagram/>
              
             </a>
-            <a href="mailto:yuvi97437@gmail.com" className="bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition">
+            <a href="mailto:yuvrajnextdev@gmail.com" className="bg-gray-800 p-3 rounded-lg hover:bg-gray-700 transition">
              <Mail/>
             </a>
           </div>
@@ -82,7 +82,7 @@ function Contact() {
           {result && <p className="text-sm text-green-500 mt-2">{result}</p>}
 
           <p className="text-sm text-gray-500 mt-2 ">
-            Or you can email me at: <a href="mailto:yuvi97437@gmail.com" className="underline">yuvi97437@gmail.com</a>
+            Or you can email me at: <a href="mailto:yuvrajnextdev@gmail.com" className="underline">yuvrajnextdev@gmail.com</a>
           </p>
         </form>
       </div>
